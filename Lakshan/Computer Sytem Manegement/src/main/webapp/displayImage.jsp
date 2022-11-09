@@ -8,7 +8,13 @@
 
 </head>
 <body>
-	<img src="./images/imageMSI GF75 Thin 10UE i.png">
+<style>
+
+background-image: url("images/imageAsus ROG Zephyrus SCAR 15.png");
+
+</style>
+
+	<img src="webapp/imagesSteelSeries Apex 7 Mechanical Gaming Keyboard.png">
 	<h1 style="color: red" align="center">DISPLAY IMAGE DETAIL</h1>
 
 	<div align="center">
@@ -26,7 +32,7 @@
 	String imgFileName = (String) request.getAttribute("img");
 	String imgId = (String) request.getAttribute("id");
 	System.out.println(imgFileName); //check image name in console window
-	
+
 	//out.print("<img src='./images/imageAsus ROG Zephyrus SCAR 15.png'" + imgFileName + ">");
 	//out.print("<img src='./images'" + imgFileName + ">");
 	%>
@@ -35,9 +41,9 @@
 		<table border="5px" style="width: 600px">
 			<tr>
 				<th>Image Id</th>
-			
+
 				<th>Image</th>
-				
+
 				<th>Image Description</th>
 			</tr>
 
@@ -47,10 +53,9 @@
 
 			<tr>
 				<td><%=imgId%></td>
-				<td><%	out.print("<img src='./images'" + imgFileName + ">"); %>				
-					</td>
+				<% out.print("<td><img src='images/"+imgFileName+"'></td>"); %>
 			</tr>
-	
+
 			<%
 			}
 			%>
