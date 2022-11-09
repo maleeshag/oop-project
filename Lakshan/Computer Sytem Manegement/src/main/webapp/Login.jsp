@@ -5,7 +5,10 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Login</title>
-
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/solar/bootstrap.min.css"
+	integrity="sha384-NCwXci5f5ZqlDw+m7FwZSAwboa0svoPPylIW3Nf+GBDsyVum+yArYnaFLE9UDzLd"
+	crossorigin="anonymous">
 <script type="text/javascript">
 	function validate() {
 		var email = document.getElementById("email").value;
@@ -37,6 +40,28 @@
 </script>
 </head>
 <body>
+	
+	<style>
+background-image
+:
+ 
+url
+(
+"
+images
+/
+Acer
+ 
+Nitro
+ 
+5
+.png
+"
+)
+;
+</style>
+
+
 	<div align="center">
 		<fieldset>
 
@@ -71,13 +96,13 @@
 			</form>
 			<br>
 			<hr>
-			<form action="LogoutServlet" method="get">
+			<!-- <form action="LogoutServlet" method="get">
 				<table>
 					<tr>
 						<td><input type="submit" value="logout"></td>
 					</tr>
 				</table>
-			</form>
+			</form> -->
 		</fieldset>
 	</div>
 </body>

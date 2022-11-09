@@ -75,7 +75,7 @@ public class loginServlet extends HttpServlet {
 
 			if (count == 1) {
 				request.setAttribute("status", "Login Succesfully.... as " + email);
-				rd = request.getRequestDispatcher("addImage.jsp");
+				rd = request.getRequestDispatcher("admin-dashboard.jsp");
 				rd.forward(request, response);
 				count = 0;
 				
